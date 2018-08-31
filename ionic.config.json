@@ -1,0 +1,8 @@
+{
+  "name": "rnl",
+  "app_id": "df786c68",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
