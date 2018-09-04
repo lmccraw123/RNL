@@ -4,15 +4,52 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Renew Life</ion-title>
+
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+     <ion-item *ngFor="let item of items">
+      {{ item }}
+      </ion-item>
+    </ion-list>
+
+    <button ion-button color="dark" clear icon-only (click)="onShoppingCart()">
+      <ion-icon name='shopping' ios="ios-cart" md="md-cart" is-active="false"></ion-icon>
+    </button>
+  
   </ion-navbar>
+  
+
+
 </ion-header>
 
+
+
+
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-card class="links"> WHY RENEW LIFE| FIND MY PROBIOTIC| LEARNING TAKES GUTS| LOGIN</ion-card>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <h6 class="mainTitle">LOOKING FOR A PROBIOTIC?</h6>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card>
+      <ion-card-header class="ionListHeader">
+        <h2><strong>Shop By:</strong></h2>
+      </ion-card-header>
+    
+      <ion-list >
+        <button id="list" (click)="concern()" ion-item>
+          <a>Concern</a>
+        </button>
+    
+        <button id="list" (click)="brand()" ion-item>
+          <a>Brand</a>
+        </button>
+    
+        <button id="list" (click)="Products()" ion-item>
+          <a>Products</a>
+        </button>
+    
+    
+      </ion-list>
+    </ion-card>
+
 </ion-content>
