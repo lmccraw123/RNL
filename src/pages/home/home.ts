@@ -11,4 +11,19 @@ export class HomePage {
 
   }
 
+  concern(){
+    
+  }
+
+  brand(){
+
+  }
+
+  Products(){
+
+  }
+
+  onShoppingCart(){
+    
+  }
 }
