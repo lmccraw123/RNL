@@ -9,5 +9,6 @@ import { BrandPage } from './brand';
   imports: [
     IonicPageModule.forChild(BrandPage),
   ],
+ 
 })
 export class BrandPageModule {}
